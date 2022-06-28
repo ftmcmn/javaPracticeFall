@@ -1,4 +1,4 @@
-package recap2;
+package recap2benn;
 
 public class Q07_StringManipulation {
 
@@ -14,5 +14,19 @@ public class Q07_StringManipulation {
 		 	 \\W  ==> A->Z		a->z			0->9    _ disindaki hersey
 		 3) \\s   ==> space
 		 	 \\S   ==> space disindaki hersey  */
+
+    public static void main(String[] args) {
+        String  str1= "$13.99";
+        String  str2= "$10.55";
+
+       str1= str1.replaceAll("\\D","");
+      str2=  str2.replaceAll("\\D","");
+
+
+
+        double toplam=(Double.parseDouble(str1)+Double.parseDouble(str2))/100;
+
+        System.out.println("$"+toplam);
+    }
 
 }
