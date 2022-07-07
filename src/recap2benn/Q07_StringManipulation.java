@@ -24,9 +24,9 @@ public class Q07_StringManipulation {
 
 
 
-        double toplam=(Double.parseDouble(str1)+Double.parseDouble(str2))/100;
+        String toplam="$"+((Double.parseDouble(str1)+Double.parseDouble(str2))/100);
 
-        System.out.println("$"+toplam);
+        System.out.println(toplam);
     }
 
 }

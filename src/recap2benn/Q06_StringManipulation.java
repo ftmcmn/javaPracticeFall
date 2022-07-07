@@ -18,7 +18,7 @@ public class Q06_StringManipulation {
         String deger2=scan.nextLine();
 
         System.out.println(deger1.concat(deger2));
-        System.out.println(deger1.substring(1,deger1.length()).concat(deger2.substring(1,deger2.length())));
+        System.out.println(deger1.substring(1).concat(deger2.substring(1)));
 
 
     }

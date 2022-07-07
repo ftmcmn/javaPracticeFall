@@ -8,11 +8,13 @@ public class Q05_StringManipulation {
     //sonrasinda konsola tam ismini buyuk harfler ile yazdirin
 
     public static void main(String[] args) {
+
         Scanner scan=new Scanner(System.in);
         System.out.println("isminizi ve soyisminiz giriniz");
-        String isim=scan.nextLine().toUpperCase();
-        String soyisim=scan.nextLine().toUpperCase();
+        String isim=scan.nextLine(), soyisim=scan.nextLine();
 
-        System.out.println(isim+" "+soyisim);
+        String fullName=isim.concat(" "+soyisim).toUpperCase();
+
+        System.out.println(fullName);
     }
 }
