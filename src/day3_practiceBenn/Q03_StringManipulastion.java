@@ -1,6 +1,4 @@
-package day3_practice;
-
-import java.util.Locale;
+package day3_practiceBenn;
 
 public class Q03_StringManipulastion {
 

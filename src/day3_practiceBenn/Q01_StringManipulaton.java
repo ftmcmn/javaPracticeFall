@@ -1,6 +1,5 @@
-package day3_practice;
+package day3_practiceBenn;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Q01_StringManipulaton {

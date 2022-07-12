@@ -1,4 +1,4 @@
-package day3_practice;
+package day3_practiceBenn;
 
 import java.util.Scanner;
 
