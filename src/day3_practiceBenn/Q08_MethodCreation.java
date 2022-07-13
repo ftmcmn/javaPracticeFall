@@ -19,6 +19,10 @@ public class Q08_MethodCreation {
          System.out.println("islem icin iki sayi giriniz");
          double sayi1=scan.nextDouble();
          double sayi2=scan.nextDouble();
+         bolme(sayi1,sayi2);
+         carpma(sayi1,sayi2);
+         cıkarma(sayi1,sayi2);
+         topla(sayi1,sayi2);
 
          switch (islem){
              case '+':topla(sayi1,sayi2);
@@ -39,10 +43,7 @@ public class Q08_MethodCreation {
          }
      }
 
-    private static double bolme(double sayi1, double sayi2) {
-
-      return sayi1/sayi2;
-    }
+    private static double bolme(double sayi1, double sayi2) {return sayi1/sayi2;  }
 
     private static double carpma(double sayi1, double sayi2) {
         return sayi1*sayi2;
