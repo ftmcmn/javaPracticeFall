@@ -11,6 +11,7 @@ public class Q01_WhileLoop {
         int sayi = scan.nextInt();
 
         System.out.println(basamakToplama(sayi));
+
     }
 
     private static int basamakToplama(int sayi) {

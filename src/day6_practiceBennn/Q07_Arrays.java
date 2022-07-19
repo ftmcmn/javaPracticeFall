@@ -8,6 +8,24 @@ public class Q07_Arrays {
      * int[] arr= {5,7,-6,4,2,15,3,8,1};
      * int istenenToplam=9;
      */
+    public static void main(String[] args) {
+        int[] arr= {5,7,-6,4,2,15,3,8,1};
+        int istenenToplam=9;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+
+                if (i+j==istenenToplam){
+
+                    System.out.println(i+" ve "+j+" toplam : "+(i+j));
+                }
+
+            }
+
+        }
+
+
+    }
 
 
 }

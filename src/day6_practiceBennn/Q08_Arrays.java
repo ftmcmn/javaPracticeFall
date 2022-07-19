@@ -10,5 +10,26 @@ public class Q08_Arrays {
         */
 
 
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int arr[]=new int[8];
+        int sayac=0;
+
+        for (int i = 0; i <arr.length ; i++) {
+
+            System.out.println(i+" . index deki sayiyi giriniz");
+            arr[i]=scan.nextInt();
+            System.out.println(arr[i]);
+
+            if (arr[i]%3==0){
+                sayac++;
+            }
+
+        }
+        System.out.println("aralarından "+sayac+ " tane sayi 3'e bölünebilir");
+
+    }
+
+
 
 }
