@@ -14,6 +14,11 @@ public class Q03_MDArray {
 
         int arr[][]={{1,3,6},{2,8},{5,7,9,14}};
 
+        cifttTopla(arr);
+
+    }
+
+    private static void cifttTopla(int[][] arr) {
         int toplam=0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -28,8 +33,6 @@ public class Q03_MDArray {
 
         }
         System.out.println("Arraydeki cift sayilarin toplami : "+toplam);
-
-
     }
 
 }

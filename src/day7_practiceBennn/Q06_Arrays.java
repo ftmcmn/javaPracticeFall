@@ -13,9 +13,11 @@ public class Q06_Arrays {
     public static void main(String[] args) {
 
         Scanner scan=new Scanner(System.in);
-       int arr[]=new int[4];
-       int enKucuk=100000;
-       int enBuyuk=-100000;
+        System.out.println("arayin uzunlugunu giriniz");
+        int uzunluk=scan.nextInt();
+        int arr[]=new int[uzunluk];
+        int enKucuk=100;
+        int enBuyuk=arr[0];
 
         for (int i = 0; i < arr.length; i++) {
 
@@ -26,14 +28,16 @@ public class Q06_Arrays {
 
                 enKucuk=arr[i];
             }
-
             if (arr[i]>enBuyuk){
 
                 enBuyuk=arr[i];
             }
 
 
+
         }
+        System.out.println("enBuyuk = " + enBuyuk);
+        System.out.println("enKucuk = " + enKucuk);
 
         System.out.println("array'in en buyuk elemani ile en kucuk elemanının  farkı :"+(enBuyuk-enKucuk));
     }

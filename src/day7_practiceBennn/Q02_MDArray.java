@@ -16,6 +16,8 @@ public class Q02_MDArray {
 
         String arr[][]={{"$12" , "$22" , "0$"},  {"€9" , "€40" , "$1" }, {"€12", "$2","$0"}};
 
+        double toplam=0;
+
         for (int i = 0; i <arr.length ; i++) {
 
             for (int j = 0; j < arr[i].length; j++) {
@@ -25,6 +27,7 @@ public class Q02_MDArray {
                     arr[i][j]=  arr[i][j].replace("$","");
                     double in=Double.valueOf(arr[i][j]);
                     in*=3.2;
+                    toplam+=in;
                     arr[i][j]="$"+in;
 
                 }else if (arr[i][j].contains("€")){
@@ -32,6 +35,7 @@ public class Q02_MDArray {
                     arr[i][j]=  arr[i][j].replace("€","");
                     double in=Double.valueOf(arr[i][j]);
                     in*=4.2;
+                    toplam+=in;
                     arr[i][j]="€"+in;
 
                 }
@@ -39,6 +43,7 @@ public class Q02_MDArray {
             }
 
         }
+        System.out.println(toplam);
         System.out.println(Arrays.deepToString(arr));
     }
 }

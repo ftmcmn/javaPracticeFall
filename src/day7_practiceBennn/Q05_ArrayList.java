@@ -2,6 +2,7 @@ package day7_practiceBennn;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Q05_ArrayList {
@@ -19,6 +20,7 @@ public class Q05_ArrayList {
         Scanner scan=new Scanner(System.in);
         System.out.print("kullanici adinizi giriniz :");
         String kullAdi=scan.nextLine();
+        Random rnd=new Random();
 
         kullAdi=kullAdi.replace(" ","");
 
@@ -29,7 +31,9 @@ public class Q05_ArrayList {
 
         if (kullAdlari.contains(kullAdi)){
 
-            kullAdlari.add(kullAdi+4);
+            kullAdi+=rnd.nextInt(100);
+            System.out.println("kullanıcı adı kullanılıyor yeni adiniz : "+kullAdi);
+            kullAdlari.add(kullAdi);
         }else {
             kullAdlari.add(kullAdi);
         }
